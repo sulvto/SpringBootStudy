@@ -17,7 +17,7 @@ import java.util.logging.Filter;
  * Created by sulvto on 16-5-16.
  */
 @Configuration
-public class WebConfig {
+public class WebConfiguration {
     @Bean
     FilterRegistrationBean filter() {
         FilterRegistrationBean filterRegistration = new FilterRegistrationBean();
