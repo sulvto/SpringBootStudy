@@ -5,10 +5,11 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by qinchao on 16-5-18.
+ * Created by sulvto on 16-5-18.
  */
 @Component
 public class ScheduledHandler {
+
     @Autowired
     private AsyncWorker asyncWorker;
 

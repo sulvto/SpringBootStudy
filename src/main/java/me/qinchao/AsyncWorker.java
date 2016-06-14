@@ -4,7 +4,7 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by qinchao on 16-5-18.
+ * Created by sulvto on 16-5-18.
  */
 @Component
 public class AsyncWorker {
