@@ -1,5 +1,7 @@
 package me.qinchao;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
@@ -8,11 +10,11 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class AsyncWorker {
+    private final Logger logger = LoggerFactory.getLogger(AsyncWorker.class);
 
     @Async
     void work() {
         String threadName = Thread.currentThread().getName();
-
-        System.out.println(threadName + " ： AsyncWorker ");
+        logger.info(threadName + " ： AsyncWorker ");
     }
 }
